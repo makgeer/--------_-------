@@ -43,12 +43,12 @@
       price: 78,
     },
   ];
-
+    // вывод массива с фото
   const photo = products.filter(function(product){
     return "photos" in product && product.photos.length > 0;
   })
   console.log(photo)
-    
+    // сортировка по цене
   const sorting = products.sort(function(a, b) {
    if (a.price > b.price) {
     return 1;
